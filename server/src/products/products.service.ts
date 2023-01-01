@@ -1,9 +1,10 @@
 import { HttpException, Injectable } from '@nestjs/common'
 import { InjectModel } from '@nestjs/mongoose'
 import { Product, ProductDocument } from './schemas/products.schema'
-import { Model } from 'mongoose'
 import { ProductsDto } from './dto/products.dto'
+import { Model } from 'mongoose'
 
+//TODO: Указать связь с комментариями
 @Injectable()
 export class ProductsService {
 	constructor(

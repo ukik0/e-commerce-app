@@ -1,13 +1,22 @@
-import { Module } from '@nestjs/common';
-import { MongooseModule } from '@nestjs/mongoose';
-import { ProductsModule } from './products/products.module';
-import { UsersModule } from './users/users.module';
+import { Module } from '@nestjs/common'
+import { MongooseModule } from '@nestjs/mongoose'
+import { ProductsModule } from './products/products.module'
+import { UsersModule } from './users/users.module'
+import { AuthModule } from './auth/auth.module'
+import { ConfigModule, ConfigService } from '@nestjs/config'
+import { getMongoConfig } from './config/mongo.config'
 
 @Module({
 	imports: [
-		MongooseModule.forRoot(`mongodb+srv://ukik0:1m1mmortalCekac@cluster0.cnml8oe.mongodb.net/e-commerce-nest-app?retryWrites=true&w=majority`),
+		MongooseModule.forRootAsync({
+			imports: [ConfigModule],
+			inject: [ConfigService],
+			useFactory: getMongoConfig
+		}),
+		ConfigModule.forRoot(),
 		ProductsModule,
-		UsersModule
+		UsersModule,
+		AuthModule
 	],
 	controllers: [],
 	providers: []

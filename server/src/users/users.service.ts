@@ -13,7 +13,7 @@ export class UsersService {
 	async getOne(id: String): Promise<User> {
 		const user = await this.userModel.findById(id)
 
-		if (!user) throw new BadRequestException('Пользователь не найден', 203)
+		if (!user) throw new BadRequestException('Пользователь не найден')
 		return user
 	}
 
