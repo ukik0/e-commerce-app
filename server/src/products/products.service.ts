@@ -10,9 +10,15 @@ export class ProductsService {
 		@InjectModel(Product.name) private productModel: Model<ProductDocument>
 	) {}
 
-	//TODO: Поменять на живой поиск
 	async getAll(): Promise<Product[]> {
 		const products = await this.productModel.find()
+		return products
+	}
+
+	async search(query: string): Promise<Product[]> {
+		const products = await this.productModel.find({
+			title: {$regex: new RegExp(query, 'i')}
+		})
 		return products
 	}
 

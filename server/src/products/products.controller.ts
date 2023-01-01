@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, Get, Param, Post, Put, UsePipes, ValidationPipe } from '@nestjs/common'
+import { Body, Controller, Delete, Get, Param, Post, Put, Query, UsePipes, ValidationPipe } from '@nestjs/common'
 import { ProductsService } from './products.service'
 import { ProductsDto } from './dto/products.dto'
 
@@ -10,6 +10,12 @@ export class ProductsController {
 	@UsePipes(new ValidationPipe())
 	getAll() {
 		return this.productsService.getAll()
+	}
+
+	@Get('search')
+	@UsePipes(new ValidationPipe())
+	search(@Query('query') query:string) {
+		return this.productsService.search(query)
 	}
 
 	@UsePipes(new ValidationPipe())
