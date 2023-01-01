@@ -1,4 +1,4 @@
-import { BadRequestException, Injectable, NotFoundException, UnauthorizedException } from '@nestjs/common'
+import { BadRequestException, Injectable, UnauthorizedException } from '@nestjs/common'
 import { JwtService } from '@nestjs/jwt'
 import { InjectModel } from '@nestjs/mongoose'
 import { AuthDto } from './dto/auth.dto'
@@ -6,6 +6,7 @@ import { User, UserDocument } from '../users/schemas/users.schema'
 import * as bcrypt from 'bcryptjs'
 import { Model } from 'mongoose'
 
+//TODO: FIX AUTH
 @Injectable()
 export class AuthService {
 	constructor(
@@ -32,7 +33,8 @@ export class AuthService {
 		await user.save()
 
 		return {
-			user,
+			// @ts-ignore
+			...user._doc,
 			accessToken: await this.AccessToken(user.id)
 		}
 	}
@@ -41,22 +43,20 @@ export class AuthService {
 		const user = await this.validateUser(dto)
 
 		return {
-			user,
+			// @ts-ignore
+			...user._doc,
 			accessToken: await this.AccessToken(user.id)
 		}
 	}
 
-	async checkMe(context?) {
-		const req = context.switchToHttp().getRequest()
-		const user = await this.userModel.findById(req.userId)
-
-		return user
+	async checkMe(id: string) {
+		return this.userModel.findById(id)
 	}
 
 	async validateUser(dto: AuthDto) {
 		const user = await this.userModel.findOne({ email: dto.email })
 
-		if (!user) throw new NotFoundException('Пользователь не найден!')
+		if (!user) throw new UnauthorizedException('Пользователь не найден!')
 
 		const isValidPassword = await bcrypt.compare(
 			dto.password,
@@ -69,8 +69,9 @@ export class AuthService {
 		return user
 	}
 
-	async AccessToken(userId: number) {
-		const data = { id: userId }
+	async AccessToken(userId: string) {
+		const data = { _id: userId }
+		console.log(data)
 		return await this.jwtService.signAsync(data, { expiresIn: '31d' })
 	}
 }
