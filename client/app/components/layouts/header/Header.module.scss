@@ -1,0 +1,29 @@
+.wrapper {
+	@apply bg-[#141414] text-white py-5;
+
+	header {
+		@apply flex items-center justify-between;
+	}
+
+	.auth {
+		font-size: 18px;
+		font-weight: 500;
+		position: relative;
+
+		&::before{
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 3px;
+			background: orange;
+			transition: .3s all ease-in-out;
+			bottom: -5px;
+		}
+
+		&:hover{
+			&::before{
+				width: 100%;
+			}
+		}
+	}
+}

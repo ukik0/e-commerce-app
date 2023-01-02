@@ -1,0 +1,26 @@
+.wrapper {
+	@apply max-w-[420px] w-full flex items-center gap-4 relative;
+
+	.input {
+		@apply w-full bg-[#333333] outline-0 py-3 px-4 rounded-xl text-gray-300 text-[16px];
+
+		&::placeholder {
+			@apply text-[14px];
+		}
+	}
+
+	.close{
+		position: absolute;
+		right: 50px;
+		top: 15px;
+		width: 20px;
+		height: 20px;
+		opacity: .8;
+	}
+
+	svg{
+		width: 25px;
+		height: 25px;
+		cursor: pointer;
+	}
+}

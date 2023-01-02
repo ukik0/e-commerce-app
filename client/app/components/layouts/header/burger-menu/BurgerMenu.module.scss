@@ -1,0 +1,11 @@
+.wrapper {
+	@apply w-[220px] pt-[30px] px-4 rounded-xl absolute top-0 ;
+
+	button {
+		@apply flex items-center justify-center h-[30px] w-[30px] relative z-30;
+
+		svg {
+			@apply w-full h-full;
+		}
+	}
+}

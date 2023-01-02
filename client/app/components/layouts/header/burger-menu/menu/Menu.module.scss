@@ -1,0 +1,60 @@
+.list {
+	@apply absolute z-10 bg-[#1f1f1f] w-full left-0 top-0 px-5 py-6 pt-[75px] flex items-start flex-col rounded-xl opacity-0 transition-all duration-300;
+
+	&.active {
+		opacity: 1;
+		@apply shadow-md;
+	}
+
+	li {
+		@apply mt-3 relative;
+
+		&.activeItem {
+			position: relative;
+
+			&::before {
+				position: absolute;
+				content: '';
+				left: -10px;
+				top: 0;
+				background: orange;
+				width: 3px;
+				height: 100%;
+				transform: translate(-50%);
+				opacity: 1;
+			}
+		}
+
+		&::before {
+			position: absolute;
+			content: '';
+			left: -10px;
+			top: 0;
+			background: #fff;
+			width: 3px;
+			height: 50%;
+			transform: translate(-50%);
+			opacity: 0;
+			transition: 0.3s all ease-in-out;
+		}
+
+		&:hover {
+			&::before {
+				height: 100%;
+				opacity: 1;
+			}
+		}
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		a {
+			@apply flex items-center gap-4 font-medium text-[16px] text-gray-200;
+
+			span {
+				@apply text-gray-200;
+			}
+		}
+	}
+}
