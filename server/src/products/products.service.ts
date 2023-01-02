@@ -3,12 +3,13 @@ import { InjectModel } from '@nestjs/mongoose'
 import { Product, ProductDocument } from './schemas/products.schema'
 import { ProductsDto } from './dto/products.dto'
 import { Model } from 'mongoose'
+import { Comment, CommentDocument } from '../comments/schemas/comments.schema'
 
-//TODO: Указать связь с комментариями
 @Injectable()
 export class ProductsService {
 	constructor(
-		@InjectModel(Product.name) private productModel: Model<ProductDocument>
+		@InjectModel(Product.name) private productModel: Model<ProductDocument>,
+		@InjectModel(Comment.name) private commentModel: Model<CommentDocument>
 	) {}
 
 	async getAll(): Promise<Product[]> {
@@ -18,16 +19,21 @@ export class ProductsService {
 
 	async search(query: string): Promise<Product[]> {
 		const products = await this.productModel.find({
-			title: {$regex: new RegExp(query, 'i')}
+			title: { $regex: new RegExp(query, 'i') }
 		})
 		return products
 	}
 
-	async getOne(id: String): Promise<Product> {
+	async getOne(id: String) {
 		const product = await this.productModel.findById(id)
+		const comments = await Promise.all(
+			product.comments.map((comment) =>
+				this.commentModel.findById(comment).populate('user')
+			)
+		)
 
 		if (!product) throw new HttpException('Товар не найден', 202)
-		return product
+		return { product, comments }
 	}
 
 	async create(dto: ProductsDto): Promise<Product> {
@@ -39,9 +45,13 @@ export class ProductsService {
 		const product = await this.getOne(id)
 		if (!product) throw new HttpException('Товар не найден', 202)
 
-		const updatedProduct = await this.productModel.findByIdAndUpdate(id, {
-			$set: dto
-		}, {new: true})
+		const updatedProduct = await this.productModel.findByIdAndUpdate(
+			id,
+			{
+				$set: dto
+			},
+			{ new: true }
+		)
 		return updatedProduct
 	}
 

@@ -6,6 +6,7 @@ import { AuthModule } from './auth/auth.module'
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { getMongoConfig } from './config/mongo.config'
 import { MediaModule } from './media/media.module'
+import { CommentsModule } from './comments/comments.module';
 
 @Module({
 	imports: [
@@ -18,7 +19,8 @@ import { MediaModule } from './media/media.module'
 		ProductsModule,
 		UsersModule,
 		AuthModule,
-		MediaModule
+		MediaModule,
+		CommentsModule
 	],
 	controllers: [],
 	providers: []
