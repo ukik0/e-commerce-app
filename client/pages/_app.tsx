@@ -12,10 +12,8 @@ const roboto = Roboto({
 export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
-			<NextNProgress height={6} color={'orange'} />
-			<main className={roboto.className}>
+			<NextNProgress height={4} color={'orange'} showOnShallow={true} stopDelayMs={20}/>
 				<Component {...pageProps} />
-			</main>
 		</>
 	)
 }

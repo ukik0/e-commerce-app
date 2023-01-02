@@ -1,0 +1,33 @@
+.wrapper {
+	@apply flex items-center flex-col gap-2 text-center pt-[180px];
+	margin: auto;
+
+
+	.title {
+		font-weight: 800;
+		font-size: 60px;
+		line-height: 70px;
+		max-width: 450px;
+		margin: 0 auto 30px;
+	}
+
+	.desc {
+		margin: 0;
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 300;
+		max-width: 400px;
+		margin: 0 auto 40px;
+	}
+
+	.button {
+		background: transparent;
+		border: 2px solid orange;
+		@apply px-4 py-3 rounded-lg text-black text-tiny transition-all duration-300;
+
+		&:hover{
+			background: orange;
+			color: #fff;
+		}
+	}
+}

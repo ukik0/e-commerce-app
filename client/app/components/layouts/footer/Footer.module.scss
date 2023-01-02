@@ -1,0 +1,41 @@
+.wrapper {
+	@apply bg-[#141414];
+
+	footer {
+		@apply flex items-center justify-between text-white py-10;
+
+		.logo {
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.list {
+			@apply flex items-center gap-8;
+
+			.item {
+				@apply text-gray-200 cursor-pointer font-medium text-sm;
+				position: relative;
+
+				&::before{
+					content: '';
+					position: absolute;
+					width: 0;
+					height: 3px;
+					background: orange;
+					transition: .3s all ease-in-out;
+					bottom: -5px;
+				}
+
+				&:hover{
+					&::before{
+						width: 100%;
+					}
+				}
+			}
+		}
+
+		.copyright{
+			@apply text-gray-200 font-medium text-sm;
+		}
+	}
+}

@@ -8,4 +8,8 @@
 			@apply w-full h-full;
 		}
 	}
+
+	.logo{
+		@apply absolute top-1/4 left-1/4 z-50 h-full object-cover;
+	}
 }

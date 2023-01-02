@@ -2,31 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52ad78f7-7d25-490b-8ec0-36ed3f7bf73a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/Layout.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/Layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/footer/Footer.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/footer/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/header/Header.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/BurgerMenu.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/BurgerMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/menu/Menu.data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/menu/Menu.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/menu/Menu.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/menu/Menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/header/search/Search.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/header/search/Search.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/hooks/useOutside.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/pages/home/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/text.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/pages/not-found/NofFound.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/pages/not-found/NotFound.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/404.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/footer/Footer.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/footer/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/BurgerMenu.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/BurgerMenu.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/BurgerMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/BurgerMenu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/menu/Menu.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/menu/Menu.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/hooks/useOutside.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/hooks/useOutside.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/globals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/MyProjects/NextJS/e-commerce-app/client/app/components/layouts/hooks",
+    "last_opened_file_path": "D:/MyProjects/NextJS/e-commerce-app/client/public/img",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -75,10 +64,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyProjects\NextJS\e-commerce-app\client\public\img" />
+      <recent name="D:\MyProjects\NextJS\e-commerce-app\client\public" />
       <recent name="D:\MyProjects\NextJS\e-commerce-app\client\app\components\layouts\hooks" />
       <recent name="D:\MyProjects\NextJS\e-commerce-app\client" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyProjects\NextJS\e-commerce-app\client\public\img" />
+      <recent name="D:\MyProjects\NextJS\e-commerce-app\client\app\components" />
       <recent name="D:\MyProjects\NextJS\e-commerce-app\client\app" />
     </key>
   </component>
@@ -90,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672673057146</updated>
-      <workItem from="1672673058179" duration="8948000" />
+      <workItem from="1672673058179" duration="12031000" />
     </task>
     <servers />
   </component>

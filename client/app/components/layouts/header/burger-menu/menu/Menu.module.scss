@@ -1,8 +1,10 @@
 .list {
 	@apply absolute z-10 bg-[#1f1f1f] w-full left-0 top-0 px-5 py-6 pt-[75px] flex items-start flex-col rounded-xl opacity-0 transition-all duration-300;
+	visibility: hidden;
 
 	&.active {
 		opacity: 1;
+		visibility: visible;
 		@apply shadow-md;
 	}
 

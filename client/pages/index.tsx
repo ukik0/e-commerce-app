@@ -1,6 +1,7 @@
 import { Home } from '@/components/pages/home/home'
+import { NextPage } from 'next'
 
-const HomePage = () => {
+const HomePage: NextPage = () => {
     return <Home/>
 }
 
