@@ -3,10 +3,9 @@ import { JwtService } from '@nestjs/jwt'
 import { InjectModel } from '@nestjs/mongoose'
 import { AuthDto } from './dto/auth.dto'
 import { User, UserDocument } from '../users/schemas/users.schema'
-import * as bcrypt from 'bcryptjs'
 import { Model } from 'mongoose'
+import * as bcrypt from 'bcryptjs'
 
-//TODO: FIX AUTH
 @Injectable()
 export class AuthService {
 	constructor(
@@ -71,7 +70,6 @@ export class AuthService {
 
 	async AccessToken(userId: string) {
 		const data = { _id: userId }
-		console.log(data)
 		return await this.jwtService.signAsync(data, { expiresIn: '31d' })
 	}
 }

@@ -5,6 +5,7 @@ import { UsersModule } from './users/users.module'
 import { AuthModule } from './auth/auth.module'
 import { ConfigModule, ConfigService } from '@nestjs/config'
 import { getMongoConfig } from './config/mongo.config'
+import { MediaModule } from './media/media.module'
 
 @Module({
 	imports: [
@@ -16,7 +17,8 @@ import { getMongoConfig } from './config/mongo.config'
 		ConfigModule.forRoot(),
 		ProductsModule,
 		UsersModule,
-		AuthModule
+		AuthModule,
+		MediaModule
 	],
 	controllers: [],
 	providers: []
