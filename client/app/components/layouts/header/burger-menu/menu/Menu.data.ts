@@ -3,7 +3,7 @@ import { FiFilm, FiHome, FiShoppingCart, FiTv } from 'react-icons/fi'
 
 export const menuData: IMenuData[] = [
 	{ icon: FiHome, href: '/', title: 'Главная' },
-	{ icon: FiFilm, href: '/films', title: 'Фильмы' },
+	{ icon: FiFilm, href: '/create', title: 'Создать продукт' },
 	{ icon: FiTv, href: '/serials', title: 'Сериалы' },
 	{ icon: FiShoppingCart, href: '/cart', title: 'Корзина' }
 ]

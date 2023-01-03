@@ -9,7 +9,7 @@ export const Header = () => {
 			<div className="container">
 				<header className={cl.header}>
 					<BurgerMenu />
-					<div/>
+					<div />
 					<Search />
 					<Link href={'/login'} className={cl.auth}>
 						Войти

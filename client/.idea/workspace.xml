@@ -2,20 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52ad78f7-7d25-490b-8ec0-36ed3f7bf73a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/pages/not-found/NofFound.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/pages/not-found/NotFound.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/404.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/heading/Heading.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/heading/Heading.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/hero/Hero.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/hero/Hero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/products/Products.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/products/product-item/ProductItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/products/product-list/ProductList.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/products.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/types/product.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/axios.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/footer/Footer.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/footer/Footer.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/BurgerMenu.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/BurgerMenu.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/hooks/useOutside.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/hooks/useOutside.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/Header.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/BurgerMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/BurgerMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/menu/Menu.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/menu/Menu.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/hooks/useOutside.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/hooks/useOutside.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/menu/Menu.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/menu/Menu.data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/pages/home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/home/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/pages/not-found/NofFound.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/not-found/NofFound.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/globals.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +55,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/MyProjects/NextJS/e-commerce-app/client/public/img",
+    "last_opened_file_path": "D:/MyProjects/NextJS/rutube/client",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -70,9 +81,11 @@
       <recent name="D:\MyProjects\NextJS\e-commerce-app\client" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\MyProjects\NextJS\e-commerce-app\client\app\components\UI\products" />
+      <recent name="D:\MyProjects\NextJS\e-commerce-app\client\app\components\UI\products\products-list" />
+      <recent name="D:\MyProjects\NextJS\e-commerce-app\client\app" />
       <recent name="D:\MyProjects\NextJS\e-commerce-app\client\public\img" />
       <recent name="D:\MyProjects\NextJS\e-commerce-app\client\app\components" />
-      <recent name="D:\MyProjects\NextJS\e-commerce-app\client\app" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -83,7 +96,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1672673057146</updated>
-      <workItem from="1672673058179" duration="12031000" />
+      <workItem from="1672673058179" duration="12136000" />
+      <workItem from="1672746696227" duration="12152000" />
     </task>
     <servers />
   </component>

@@ -1,5 +1,12 @@
 .wrapper {
-	@apply bg-[#141414] text-white py-5;
+	@apply bg-[#141414] text-white py-5 sticky top-0 z-[100];
+	transition: 0.6s all ease-in-out;
+	position: sticky;
+	top: 0;
+	transform: translateZ(0);
+	-webkit-backdrop-filter: saturate(180%) blur(5px);
+	backdrop-filter: saturate(180%) blur(5px);
+	background: hsla(0, 0%, 0%, 0.9);
 
 	header {
 		@apply flex items-center justify-between;
@@ -10,18 +17,18 @@
 		font-weight: 500;
 		position: relative;
 
-		&::before{
+		&::before {
 			content: '';
 			position: absolute;
 			width: 0;
 			height: 3px;
 			background: orange;
-			transition: .3s all ease-in-out;
+			transition: 0.3s all ease-in-out;
 			bottom: -5px;
 		}
 
-		&:hover{
-			&::before{
+		&:hover {
+			&::before {
 				width: 100%;
 			}
 		}
