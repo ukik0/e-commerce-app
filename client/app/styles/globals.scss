@@ -15,6 +15,10 @@ html {
 	margin: 0;
 }
 
+body{
+	@apply scrollbar scrollbar-thumb-orange-300 scrollbar-track-gray-200
+}
+
 a {
 	text-decoration: none;
 }

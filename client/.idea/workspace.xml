@@ -2,31 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52ad78f7-7d25-490b-8ec0-36ed3f7bf73a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/UI/heading/Heading.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/UI/heading/Heading.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/UI/hero/Hero.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/UI/hero/Hero.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/UI/products/Products.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/UI/products/product-item/ProductItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/UI/products/product-list/ProductList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/products.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/types/product.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/utils/axios.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/modal/Modal.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/modal/Modal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsLeft.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsLeft.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsSizes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsTypes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/products/products-right/ProductsRight.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/products/products-right/ProductsRight.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/layouts/footer/Footer.data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/layouts/footer/Footer.interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/hooks/useOutside.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/hooks/useOutside.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/Header.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/Header.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/UI/products/Products.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/Products.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/UI/products/product-item/ProductItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/product-item/ProductItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/footer/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/BurgerMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/BurgerMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/menu/Menu.data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/menu/Menu.data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/home/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/not-found/NofFound.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/not-found/NofFound.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/globals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/types/product.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/types/product.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/axios.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/axios.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/products/dto/products.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/products/dto/products.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/products/schemas/products.schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/products/schemas/products.schema.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672673057146</updated>
       <workItem from="1672673058179" duration="12136000" />
-      <workItem from="1672746696227" duration="12152000" />
+      <workItem from="1672746696227" duration="22442000" />
     </task>
     <servers />
   </component>

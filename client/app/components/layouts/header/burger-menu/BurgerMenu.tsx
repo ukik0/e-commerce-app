@@ -23,7 +23,7 @@ export const BurgerMenu = () => {
 			<button className={cl.button} onClick={() => setIsShow((prev) => !prev)}>
 				{!isShow ? <FiMenu/> : <FiX/>}
 			</button>
-			<Image src={'/img/logo.png'} alt={''} width={90} height={90} className={cl.logo} priority/>
+			<Image src={'/img/logo.png'} alt={'logo'} width={90} height={90} className={cl.logo} priority/>
 			<Menu open={isShow} menu={menuData}/>
 		</div>
 	)
