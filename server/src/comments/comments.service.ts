@@ -19,7 +19,7 @@ export class CommentsService {
 
 		if (!dto.text) throw new BadRequestException('Комментарий не может быть пусты')
 
-		const comment = await this.commentModel.create({ text: dto.text, user: user._id })
+		const comment = await this.commentModel.create({ text: dto.text, user: user._id, created_at: Date.now() })
 
 		await comment.save()
 

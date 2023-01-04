@@ -9,4 +9,5 @@ export class CommentsDto {
 	@IsString()
 	productId: string
 
+	created_at: number
 }
