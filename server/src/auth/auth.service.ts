@@ -26,7 +26,8 @@ export class AuthService {
 
 		const user = await this.userModel.create({
 			email: dto.email,
-			password: hashedPassword
+			password: hashedPassword,
+			username: dto.username
 		})
 
 		await user.save()
@@ -49,7 +50,9 @@ export class AuthService {
 	}
 
 	async checkMe(id: string) {
-		return this.userModel.findById(id)
+		const decodedJwt = this.jwtService.decode(id)
+		// @ts-ignore
+		return this.userModel.findById(decodedJwt._id)
 	}
 
 	async validateUser(dto: AuthDto) {

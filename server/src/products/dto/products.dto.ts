@@ -23,6 +23,6 @@ export class ProductsDto {
 
 	@IsNotEmpty()
 	@IsArray()
-	size: number[]
+	size: string[]
 
 }

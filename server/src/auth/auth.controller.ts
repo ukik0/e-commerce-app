@@ -1,8 +1,6 @@
-import { Body, Controller, Get, Post, UsePipes, ValidationPipe } from '@nestjs/common'
+import { Body, Controller, Get, Headers, Post, UsePipes, ValidationPipe } from '@nestjs/common'
 import { AuthService } from './auth.service'
 import { AuthDto } from './dto/auth.dto'
-import { Auth } from './decorators/auth.decorator'
-import { CurrentUser } from '../users/users.decorator'
 
 @Controller('auth')
 export class AuthController {
@@ -21,10 +19,9 @@ export class AuthController {
 	}
 
 
-	@Auth()
 	@UsePipes(new ValidationPipe())
 	@Get('me')
-	checkMe(@CurrentUser('id') id: string) {
-		return this.authService.checkMe(id)
+	checkMe(@Headers('Authorization') Authorization: string) {
+		return this.authService.checkMe(Authorization)
 	}
 }

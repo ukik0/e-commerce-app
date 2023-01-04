@@ -21,8 +21,8 @@ export class Product {
 	@Prop({type: [{type: String, default: []}]})
 	type: string[]
 
-	@Prop({type: [{type: Number, default: []}]})
-	size: number[]
+	@Prop({type: [{type: String, default: []}]})
+	size: string[]
 
 	@Prop({ type: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Comment' }] })
 	comments: Comment[]
