@@ -7,6 +7,7 @@ import { menuData } from '@/components/layouts/header/burger-menu/menu/Menu.data
 import Image from 'next/image'
 import cn from 'classnames'
 import cl from './BurgerMenu.module.scss'
+import Link from 'next/link'
 
 export const BurgerMenu = () => {
 	const {ref, isShow, setIsShow} = useOutside(false)
@@ -23,7 +24,9 @@ export const BurgerMenu = () => {
 			<button className={cl.button} onClick={() => setIsShow((prev) => !prev)}>
 				{!isShow ? <FiMenu/> : <FiX/>}
 			</button>
-			<Image src={'/img/logo.png'} alt={'logo'} width={90} height={90} className={cl.logo} priority/>
+			<Link href={'/'}>
+				<Image src={'/img/logo.png'} alt={'logo'} width={90} height={90} className={cl.logo} priority/>
+			</Link>
 			<Menu open={isShow} menu={menuData}/>
 		</div>
 	)

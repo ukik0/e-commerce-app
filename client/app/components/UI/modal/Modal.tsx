@@ -7,6 +7,8 @@ interface ModalProps {
 	setActive: Dispatch<SetStateAction<boolean>>
 }
 
+//TODO: Пофиксить скролл, когда открыта
+
 export const Modal: FC<PropsWithChildren<ModalProps>> = ({ active, setActive, children }) => {
 	return (
 		<div className={cn(cl.modal, {

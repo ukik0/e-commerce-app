@@ -1,0 +1,20 @@
+.wrapper {
+	@apply w-full mt-3;
+
+	.label {
+		@apply flex flex-col items-start gap-4 text-gray-800 font-medium;
+
+		input {
+			@apply bg-transparent outline-0 px-4 py-3 rounded-xl w-full text-black font-medium;
+			border: 1px solid #ff6c01;
+
+			&::placeholder {
+				@apply text-gray-800 text-[0.9rem] opacity-75;
+			}
+		}
+
+		.error {
+			@apply text-red-400 font-bold;
+		}
+	}
+}
