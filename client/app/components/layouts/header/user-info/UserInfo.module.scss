@@ -1,0 +1,20 @@
+.user {
+  @apply flex items-center gap-5;
+
+  img {
+    @apply max-w-[40px] w-full h-[40px] rounded-full;
+  }
+
+  .info {
+    @apply flex flex-col;
+
+    span {
+      @apply text-white font-medium text-[0.9rem];
+    }
+
+    button {
+      @apply rounded-xl mt-1 font-medium text-[0.9rem];
+      background: rgba(#ff6c01, 0.7);
+    }
+  }
+}

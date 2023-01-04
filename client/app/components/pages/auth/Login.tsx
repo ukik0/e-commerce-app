@@ -5,9 +5,11 @@ import { IAuth } from '@/types/auth.interface'
 import { useActions } from '@/hooks/useActions'
 import Link from 'next/link'
 import cl from './Auth.module.scss'
+import { useRouter } from 'next/router'
 
 export const Login = () => {
 	const { login } = useActions()
+	const router = useRouter()
 
 	const {
 		register,
@@ -17,7 +19,10 @@ export const Login = () => {
 	} = useForm<IAuth>({ mode: 'onChange' })
 
 	const onSubmit: SubmitHandler<IAuth> = (data) => {
-		login(data).then(() => reset()).catch((e) => console.log('Ошибка авторизации'))
+		login(data).then(() => {
+			reset()
+			router.push('/')
+		}).catch((e) => console.log('Ошибка авторизации'))
 	}
 
 	return (

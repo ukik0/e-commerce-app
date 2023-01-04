@@ -40,5 +40,6 @@ export const getMe = createAsyncThunk<any, any>('auth/me', async () => {
 })
 
 export const logout = createAsyncThunk('auth/logout', async () => {
+	localStorage.removeItem('token')
 	return {}
 })

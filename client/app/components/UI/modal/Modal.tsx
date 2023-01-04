@@ -13,7 +13,7 @@ export const Modal: FC<PropsWithChildren<ModalProps>> = ({ active, setActive, ch
 	return (
 		<div className={cn(cl.modal, {
 			[cl.active]: active
-		})} onClick={() => setActive((prev) => false)}>
+		})} onClick={() => setActive(false)}>
 			<div className={cn(cl.content, {
 				[cl.active]: active
 			})} onClick={(e) => e.stopPropagation()}>

@@ -4,7 +4,7 @@ import { getMe, login, logout, register } from '@/store/auth/auth.actions'
 
 const initialState: IAuthState = {
 	user: null,
-	accessToken: '',
+	accessToken: typeof window !== "undefined" ? window.localStorage.getItem('token') : '',
 	isLoading: false
 }
 
@@ -40,24 +40,24 @@ export const authSlice = createSlice({
 				state.user = null
 				state.accessToken = ''
 			})
-			.addCase(getMe.pending, (state) => {
-				state.isLoading = true
-			})
 			.addCase(getMe.fulfilled, (state, action) => {
 				state.isLoading = false
 				state.user = action.payload
-				state.accessToken = action.payload.accessToken
 			})
-			.addCase(getMe.rejected, (state) => {
+			.addCase(getMe.rejected, (state, action) => {
 				state.isLoading = false
 				state.user = null
 				state.accessToken = ''
+			})
+			.addCase(getMe.pending, (state, action) => {
+				state.isLoading = true
 			})
 			.addCase(logout.fulfilled, (state) => {
 				state.isLoading = false
 				state.user = null
 				state.accessToken = ''
 			})
+
 	}
 })
 

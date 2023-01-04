@@ -1,11 +1,13 @@
 import { BurgerMenu } from '@/components/layouts/header/burger-menu/BurgerMenu'
 import { Search } from '@/components/layouts/header/search/Search'
 import { useAuth } from '@/hooks/useAuth'
+import { UserInfo } from '@/components/layouts/header/user-info/UserInfo'
 import Link from 'next/link'
 import cl from './Header.module.scss'
 
 export const Header = () => {
-	const { user } = useAuth()
+	const { user, isLoading } = useAuth()
+
 
 	return (
 		<div className={cl.wrapper}>
@@ -19,7 +21,7 @@ export const Header = () => {
 							Войти
 						</Link>
 					) : (
-						<div>{user.username}</div>
+						<UserInfo user={user} isLoading={isLoading}/>
 					)}
 				</header>
 			</div>

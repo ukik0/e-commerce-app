@@ -3,11 +3,15 @@ import { Field } from '@/components/UI/field/Field'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { IAuth } from '@/types/auth.interface'
 import { useActions } from '@/hooks/useActions'
+import { useRouter } from 'next/router'
 import Link from 'next/link'
 import cl from '@/components/pages/auth/Auth.module.scss'
 
+
+//TODO:Добавить toast или toastr
 export const Register = () => {
 	const {register: registration} = useActions()
+	const router = useRouter()
 
 	const {
 		register,
@@ -17,7 +21,10 @@ export const Register = () => {
 	} = useForm<IAuth>({ mode: 'onChange' })
 
 	const onSubmit: SubmitHandler<IAuth> = (data) => {
-		registration(data).then(() => reset()).catch((e) => console.log('Ошибка регистрации'))
+		registration(data).then(() => {
+			reset()
+			router.push('/')
+		}).catch((e) => console.log('Ошибка регистрации'))
 	}
 
 	return (

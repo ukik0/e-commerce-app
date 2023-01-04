@@ -14,7 +14,7 @@
     }
 
     .info {
-      @apply flex flex-col;
+      @apply flex flex-col cursor-pointer;
 
       .title {
         @apply text-white font-bold;

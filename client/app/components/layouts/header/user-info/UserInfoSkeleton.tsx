@@ -4,10 +4,10 @@ import ContentLoader from 'react-content-loader'
 const UserInfoSkeleton = (props: any) => (
 	<ContentLoader
 		speed={3}
-		width={300}
-		height={300}
-		viewBox="0 0 300 300"
-		backgroundColor="#cfcece"
+		width={170}
+		height={40}
+		viewBox="0 0 200 60"
+		backgroundColor="#858585"
 		foregroundColor="#d9d9d9"
 		{...props}
 	>
