@@ -2,22 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52ad78f7-7d25-490b-8ec0-36ed3f7bf73a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/UI/field/Field.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/UI/field/Field.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/UI/field/Field.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/pages/auth/Login.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/pages/auth/Login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/pages/auth/Register.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/types/auth.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/login.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/register.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/layouts/header/search/result/Result.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/layouts/header/search/result/Result.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/hooks/useDebounce.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/hooks/useSearch.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/api/api.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/root-reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UI/modal/Modal.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/modal/Modal.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UI/modal/Modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/modal/Modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/footer/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/footer/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/BurgerMenu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/burger-menu/BurgerMenu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/globals.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/search/Search.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/search/Search.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/search/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/search/Search.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gitignore" afterDir="false" />
@@ -95,7 +91,7 @@
       <workItem from="1672673058179" duration="12136000" />
       <workItem from="1672746696227" duration="22654000" />
       <workItem from="1672778966661" duration="5000" />
-      <workItem from="1672829793114" duration="4165000" />
+      <workItem from="1672829793114" duration="7290000" />
     </task>
     <servers />
   </component>
