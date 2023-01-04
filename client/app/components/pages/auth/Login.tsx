@@ -2,24 +2,31 @@ import { Layout } from '@/components/layouts/Layout'
 import { Field } from '@/components/UI/field/Field'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { IAuth } from '@/types/auth.interface'
+import { useActions } from '@/hooks/useActions'
 import Link from 'next/link'
-import cl from './Login.module.scss'
+import cl from './Auth.module.scss'
 
 export const Login = () => {
+	const { login } = useActions()
+
 	const {
 		register,
 		formState: { errors, isValid },
-		handleSubmit
+		handleSubmit,
+		reset
 	} = useForm<IAuth>({ mode: 'onChange' })
 
 	const onSubmit: SubmitHandler<IAuth> = (data) => {
-		console.log(data)
+		login(data).then(() => reset()).catch((e) => console.log('Ошибка авторизации'))
 	}
 
 	return (
 		<Layout title="Авторизация">
 			<div className="container">
-				<form className={`${cl.form} pt-[120px]`} onSubmit={handleSubmit(onSubmit)}>
+				<form
+					className={`${cl.form} pt-[120px]`}
+					onSubmit={handleSubmit(onSubmit)}
+				>
 					<h5 className={cl.title}>Вход</h5>
 					<Field
 						{...register('email', {

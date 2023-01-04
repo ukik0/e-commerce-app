@@ -2,21 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52ad78f7-7d25-490b-8ec0-36ed3f7bf73a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/header/search/result/Result.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/layouts/header/search/result/Result.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/hooks/useDebounce.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/hooks/useSearch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/store/api/api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/store/root-reducer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/store/store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/hooks/useActions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/hooks/useAuth.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/hooks/useTypedSelector.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/services/auth.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/auth/auth.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/auth/auth.slice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/search/Search.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/search/Search.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/search/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/search/Search.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/pages/auth/Login.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/auth/Auth.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/pages/auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/auth/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/pages/auth/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/auth/Register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/api/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/root-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/root-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/types/auth.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/types/auth.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/utils/axios.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/utils/axios.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/404.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/404.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../server/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/auth/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/auth/auth.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/auth/dto/auth.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/auth/dto/auth.dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/products/dto/products.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/products/dto/products.dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/products/schemas/products.schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/products/schemas/products.schema.ts" afterDir="false" />
     </list>
@@ -91,7 +104,7 @@
       <workItem from="1672673058179" duration="12136000" />
       <workItem from="1672746696227" duration="22654000" />
       <workItem from="1672778966661" duration="5000" />
-      <workItem from="1672829793114" duration="7290000" />
+      <workItem from="1672829793114" duration="14663000" />
     </task>
     <servers />
   </component>

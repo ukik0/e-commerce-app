@@ -2,18 +2,22 @@ import { Layout } from '@/components/layouts/Layout'
 import { Field } from '@/components/UI/field/Field'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { IAuth } from '@/types/auth.interface'
+import { useActions } from '@/hooks/useActions'
 import Link from 'next/link'
-import cl from '@/components/pages/auth/Login.module.scss'
+import cl from '@/components/pages/auth/Auth.module.scss'
 
 export const Register = () => {
+	const {register: registration} = useActions()
+
 	const {
 		register,
 		formState: { errors, isValid },
-		handleSubmit
+		handleSubmit,
+		reset
 	} = useForm<IAuth>({ mode: 'onChange' })
 
 	const onSubmit: SubmitHandler<IAuth> = (data) => {
-		console.log(data)
+		registration(data).then(() => reset()).catch((e) => console.log('Ошибка регистрации'))
 	}
 
 	return (
@@ -30,7 +34,7 @@ export const Register = () => {
 								message: 'Не менее 6 имволов'
 							}
 						})}
-						placeholder={'Введите Имя'}
+						placeholder={'Введите Имя и Фамилию'}
 						type={'text'}
 						error={errors.username}
 						title="Имя"
@@ -65,7 +69,7 @@ export const Register = () => {
 					/>
 
 					<button disabled={!isValid} type={'submit'}>
-						Войти
+						Регистрация
 					</button>
 
 					<p>

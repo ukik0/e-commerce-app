@@ -3,6 +3,7 @@ import { NextPage } from 'next'
 import { ProductsService } from '@/services/products.service'
 
 const HomePage: NextPage = (props) => {
+
 	return <Home {...props} />
 }
 

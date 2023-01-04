@@ -1,7 +1,8 @@
 import Head from 'next/head'
-import { FC, PropsWithChildren } from 'react'
+import { FC, PropsWithChildren, useEffect } from 'react'
 import { Header } from '@/components/layouts/header/Header'
 import { Footer } from '@/components/layouts/footer/Footer'
+import { useActions } from '@/hooks/useActions'
 
 interface LayoutProps {
 	title: string
@@ -10,6 +11,12 @@ interface LayoutProps {
 }
 
 export const Layout: FC<PropsWithChildren<LayoutProps>> = ({title,description,keywords,children}) => {
+	const {getMe} = useActions()
+
+	useEffect(() => {
+		getMe({})
+	}, [])
+
 	return (
 		<>
 			<Head>
