@@ -2,29 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52ad78f7-7d25-490b-8ec0-36ed3f7bf73a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/UI/comment-item/CommentItem.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/UI/comment-item/CommentItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/services/upload.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/pages/cart/Cart.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/pages/cart/Cart.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/pages/cart/cart-item/CartItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/cart/cart.slice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/cart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UI/products/product-list/ProductList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/product-list/ProductList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsLeft.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsLeft.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsSizes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsSizes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsTypes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsTypes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/UI/products/products-right/ProductsRight.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/products-right/ProductsRight.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UI/products/products-right/ProductsRight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/products-right/ProductsRight.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/search/Search.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/search/Search.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/search/result/Result.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/search/result/Result.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/search/result/result-item/ResultItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/search/result/result-item/ResultItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/auth/Login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/user-info/UserInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/user-info/UserInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/user-info/UserInfoSkeleton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/user-info/UserInfoSkeleton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/pages/auth/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/auth/Register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/home/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/hooks/useSearch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/hooks/useSearch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/api/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/auth/auth.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/auth/auth.actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/auth/auth.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/auth/auth.slice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/types/auth.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/types/auth.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/auth/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/auth/dto/auth.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/auth/dto/auth.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../server/src/media/media.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/media/media.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hooks/useActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/hooks/useActions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/root-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/root-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/products/schemas/products.schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/products/schemas/products.schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/users/dto/users.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/users/dto/users.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/users/schemas/users.schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/users/schemas/users.schema.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/users/users.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/users/users.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/users/users.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/users/users.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/users/users.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/users/users.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +101,7 @@
       <workItem from="1672778966661" duration="5000" />
       <workItem from="1672829793114" duration="30768000" />
       <workItem from="1672865522550" duration="1409000" />
-      <workItem from="1672917081249" duration="2984000" />
+      <workItem from="1672917081249" duration="13856000" />
     </task>
     <servers />
   </component>

@@ -9,6 +9,12 @@
 		@apply relative mt-[10px];
 
 		button {
+			svg{
+				color: #000;
+				max-width: 16px;
+				width: 100%;
+			}
+
 			&:disabled {
 				opacity: 0;
 			}

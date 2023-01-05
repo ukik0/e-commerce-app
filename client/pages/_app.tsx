@@ -1,23 +1,18 @@
 import type { AppProps } from 'next/app'
-import { Roboto } from '@next/font/google'
+import { PersistGate } from 'redux-persist/integration/react'
 import { Provider } from 'react-redux'
-import { store } from '@/store/store'
+import { persistor, store } from '@/store/store'
 import NextNProgress from 'nextjs-progressbar'
 import '../app/styles/globals.scss'
 
-const roboto = Roboto({
-	weight: ['400', '500', '700', '900'],
-	style: ['normal'],
-	subsets: ['greek', 'latin']
-})
-
 export default function App({ Component, pageProps }: AppProps) {
-
 	return (
 		<>
+			<NextNProgress color="#FF7652" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={true} />
 			<Provider store={store}>
-				<NextNProgress height={4} color={'orange'} showOnShallow={true} stopDelayMs={20}/>
-				<Component {...pageProps} />
+				<PersistGate persistor={persistor} loading={null}>
+					<Component {...pageProps} />
+				</PersistGate>
 			</Provider>
 		</>
 	)

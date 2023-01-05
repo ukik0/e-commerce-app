@@ -83,8 +83,12 @@ export const Register = () => {
 					/>
 
 					<Field
+						{...register('avatarUrl', {
+							required: 'Аватар не может быть пустым',
+						})}
 						type={'file'}
 						title={'Ваш аватар'}
+						accept="image/png, image/jpeg"
 						onChange={handleChange}
 					/>
 

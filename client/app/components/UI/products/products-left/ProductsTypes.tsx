@@ -1,9 +1,14 @@
-import { FC, useState } from 'react'
+import { Dispatch, FC, SetStateAction } from 'react'
 import cl from '@/components/UI/products/products-left/ProductsLeft.module.scss'
 import cn from 'classnames'
 
-export const ProductsTypes: FC<{ types: string[] }> = ({ types }) => {
-	const [currentType, setCurrentType] = useState<number>(0)
+interface ProductTypesProps {
+	types: string[]
+	currentType: number
+	setCurrentType: Dispatch<SetStateAction<number>>
+}
+
+export const ProductsTypes: FC<ProductTypesProps> = ({ types,setCurrentType,currentType }) => {
 
 	return (
 		<ul className={cl.size}>

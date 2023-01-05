@@ -1,9 +1,14 @@
-import { FC, useState } from 'react'
+import { Dispatch, FC, SetStateAction } from 'react'
 import cl from '@/components/UI/products/products-left/ProductsLeft.module.scss'
 import cn from 'classnames'
 
-export const ProductsSizes: FC<{ sizes: string[] }> = ({ sizes }) => {
-	const [currentSize, setCurrentSize] = useState<number>(0)
+interface ProductSizesProps{
+	sizes: string[]
+	currentSize: number
+	setCurrentSize: Dispatch<SetStateAction<number>>
+}
+
+export const ProductsSizes: FC<ProductSizesProps> = ({ sizes,setCurrentSize,currentSize }) => {
 
 	return (
 		<ul className={cl.size}>

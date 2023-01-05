@@ -1,8 +1,8 @@
 import { FC } from 'react'
 import { IUser } from '@/types/auth.interface'
 import { useActions } from '@/hooks/useActions'
-import cl from '@/components/layouts/header/user-info/UserInfo.module.scss'
 import UserInfoSkeleton from '@/components/layouts/header/user-info/UserInfoSkeleton'
+import cl from '@/components/layouts/header/user-info/UserInfo.module.scss'
 
 interface UserInfoProps {
 	user: IUser
