@@ -5,6 +5,7 @@ import { ProductsTypes } from '@/components/UI/products/products-left/ProductsTy
 import { useActions } from '@/hooks/useActions'
 import cl from './ProductsLeft.module.scss'
 import { useTypedSelector } from '@/hooks/useTypedSelector'
+import { toastr } from 'react-redux-toastr'
 
 export const ProductsLeft: FC<{ product: IProduct }> = ({ product }) => {
 	const {addToCart} = useActions()
@@ -15,6 +16,7 @@ export const ProductsLeft: FC<{ product: IProduct }> = ({ product }) => {
 
 	const addProduct = useCallback(() => {
 		addToCart({ ...product, type: [product.type[currentType]], size: [product.size[currentSize]] })
+		toastr.success('Товар', `${product.title} добавлен в корзину`)
 	}, [currentType, currentSize])
 
 	return (

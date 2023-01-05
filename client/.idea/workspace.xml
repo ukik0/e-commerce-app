@@ -2,22 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52ad78f7-7d25-490b-8ec0-36ed3f7bf73a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/pages/cart/Cart.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/pages/cart/Cart.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/pages/cart/cart-item/CartItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/store/cart/cart.slice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/cart.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/middlewares/error.middleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/utils/api.utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsLeft.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsLeft.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsSizes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsSizes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsTypes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsTypes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UI/products/products-right/ProductsRight.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/products-right/ProductsRight.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/user-info/UserInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/user-info/UserInfo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/layouts/header/user-info/UserInfoSkeleton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/layouts/header/user-info/UserInfoSkeleton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/pages/auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/auth/Login.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/pages/auth/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/auth/Register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/hooks/useActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/hooks/useActions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/store/root-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/root-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/globals.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
@@ -50,21 +43,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/MyProjects/NextJS/e-commerce-app/client&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\MyProjects\\NextJS\\e-commerce-app\\client\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\MyProjects\\NextJS\\e-commerce-app\\client\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/MyProjects/NextJS/e-commerce-app/client/app/utils",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "D:\\MyProjects\\NextJS\\e-commerce-app\\client\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "ts.external.directory.path": "D:\\MyProjects\\NextJS\\e-commerce-app\\client\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -75,10 +68,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyProjects\NextJS\e-commerce-app\client\app\utils" />
+      <recent name="D:\MyProjects\NextJS\e-commerce-app\client\app\store" />
       <recent name="D:\MyProjects\NextJS\e-commerce-app\client\public\img" />
       <recent name="D:\MyProjects\NextJS\e-commerce-app\client\public" />
       <recent name="D:\MyProjects\NextJS\e-commerce-app\client\app\components\layouts\hooks" />
-      <recent name="D:\MyProjects\NextJS\e-commerce-app\client" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\MyProjects\NextJS\e-commerce-app\client\app\components\pages\auth" />
@@ -101,7 +95,7 @@
       <workItem from="1672778966661" duration="5000" />
       <workItem from="1672829793114" duration="30768000" />
       <workItem from="1672865522550" duration="1409000" />
-      <workItem from="1672917081249" duration="13856000" />
+      <workItem from="1672917081249" duration="16200000" />
     </task>
     <servers />
   </component>

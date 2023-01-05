@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import 'react-redux-toastr/src/styles/index';
 
 html {
 	box-sizing: border-box;
@@ -32,4 +33,27 @@ ul {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
+}
+
+.redux-toastr {
+	.toastr {
+		@apply shadow;
+		background-color: #272532;
+
+		&.rrt-success {
+			background-color: #56db8b;
+		}
+
+		&.rrt-warning {
+			background-color: #eaa84c;
+		}
+
+		&.rrt-info {
+			background-color: #4d85e7;
+		}
+
+		&.rrt-error {
+			background-color: #e94d4d;
+		}
+	}
 }

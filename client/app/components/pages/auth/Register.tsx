@@ -8,9 +8,9 @@ import { useRouter } from 'next/router'
 import { UploadService } from '@/services/upload.service'
 import Link from 'next/link'
 import cl from '@/components/pages/auth/Auth.module.scss'
+import { toastr } from 'react-redux-toastr'
 
 
-//TODO:Добавить toast или toastr
 export const Register = () => {
 	const {register: registration} = useActions()
 	const router = useRouter()
@@ -22,7 +22,8 @@ export const Register = () => {
 		registration({ ...data, avatarUrl }).then(() => {
 			reset()
 			router.push('/')
-		}).catch((e: Error) => console.log(e.message))
+			toastr.success('Регистрация', 'прошла успешно')
+		}).catch((e: Error) => toastr.error('Регистрация', 'Возможно, пользователь уже зарегистрирован'))
 	}
 
 	const handleChange = useCallback(async (event: ChangeEvent<HTMLInputElement>) => {

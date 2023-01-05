@@ -6,6 +6,7 @@ import { useActions } from '@/hooks/useActions'
 import Link from 'next/link'
 import cl from './Auth.module.scss'
 import { useRouter } from 'next/router'
+import { toastr } from 'react-redux-toastr'
 
 export const Login = () => {
 	const { login } = useActions()
@@ -18,8 +19,9 @@ export const Login = () => {
 			.then(() => {
 				reset()
 				router.push('/')
+				toastr.success('Авторизация', 'прошла успешно')
 			})
-			.catch((e: Error) => console.log('Ошибка авторизации'))
+			.catch((e: Error) => toastr.error('Ошибка.', 'Возможно, пользователь уже зарегистрирован'))
 	}
 
 	return (
