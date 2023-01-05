@@ -10,7 +10,7 @@ interface IProductList {
 export const ProductList: FC<IProductList> = ({products}) => {
 	return (
 		<ul className={cl.list}>
-			{products.map((product) => (
+			{products?.map((product) => (
 				<ProductItem key={product._id} product={product}/>
 			))}
 		</ul>

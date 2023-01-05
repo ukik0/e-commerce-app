@@ -5,7 +5,7 @@ import { IComment, ICommentCreate, ICommentResponse, IResponse } from '@/types/c
 
 export const api = createApi({
 	reducerPath: 'api',
-	tagTypes: ['Comments'],
+	tagTypes: ['Products', 'Comments'],
 	baseQuery: fetchBaseQuery({
 		baseUrl: 'http://localhost:8001/api',
 		prepareHeaders: (headers, { getState }) => {
@@ -20,7 +20,8 @@ export const api = createApi({
 	}),
 	endpoints: (builder) => ({
 		getProductsByQuery: builder.query<IProduct[], string>({
-			query: (query) => ({ url: 'products/search', params: { query } })
+			query: (query) => ({ url: 'products/search', params: { query } }),
+			providesTags: () => [{ type: 'Products' }]
 		}),
 		getProduct: builder.query<IComment[], string>({
 			query: (id) => ({ url: `products/${id}` }),
@@ -33,7 +34,7 @@ export const api = createApi({
 				method: 'POST',
 				body: body
 			}),
-			invalidatesTags: () => [{ type: 'Comments' }]
+			invalidatesTags: (result, error, arg) => [{ type: 'Comments' }]
 		})
 	})
 })

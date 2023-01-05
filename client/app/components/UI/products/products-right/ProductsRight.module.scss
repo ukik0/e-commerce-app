@@ -8,6 +8,12 @@
 	.input__wrapper {
 		@apply relative mt-[10px];
 
+		button {
+			&:disabled {
+				opacity: 0;
+			}
+		}
+
 		.input {
 			@apply w-full px-4 py-3 rounded-xl mt-4 font-medium text-gray-700 pr-[110px];
 			border: 1px solid black;
@@ -30,32 +36,5 @@
 		@apply flex flex-col gap-2 mt-6 h-[460px] scrollbar scrollbar-thumb-orange-300 scrollbar-track-gray-200 relative z-10;
 		max-height: 480px;
 		overflow-x: hidden;
-
-		.item {
-			@apply flex items-start gap-4 relative pb-3 max-w-[460px] w-full;
-
-			img {
-				max-width: 40px;
-				width: 100%;
-				height: 40px;
-				border-radius: 50%;
-			}
-
-			.content {
-				@apply flex flex-col items-start;
-
-				.name {
-					@apply text-black font-bold;
-				}
-
-				.description {
-					@apply text-gray-600 font-medium leading-5 pr-5 max-w-[460px] w-full;
-				}
-			}
-
-			.time {
-				@apply text-[0.8rem] font-medium text-gray-700 absolute right-6 top-0;
-			}
-		}
 	}
 }

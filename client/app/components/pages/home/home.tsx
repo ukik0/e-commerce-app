@@ -10,12 +10,13 @@ interface IHome {
 }
 
 export const Home: FC<IHome> = ({products}) => {
+
 	return (
 		<Layout title={'Главная страница'}>
 			<Hero />
 			<div className="container">
 				<Heading title={'Наши товары'} />
-				<ProductList products={products}/>
+				<ProductList products={products!}/>
 			</div>
 		</Layout>
 	)

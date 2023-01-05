@@ -23,7 +23,7 @@ export const UserInfo: FC<UserInfoProps> = ({ user, isLoading }) => {
 			) : (
 				<div className={cl.user}>
 					<img
-						src="https://cdn.dribbble.com/users/744746/avatars/normal/1c0a74119b518f35b2cdecefca9558b2.png?1668089400&compress=1&resize=40x40"
+						src={`http://localhost:8001${user?.avatarUrl}`}
 						alt={user.username}
 					/>
 					<div className={cl.info}>

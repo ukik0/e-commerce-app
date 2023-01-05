@@ -27,7 +27,8 @@ export class AuthService {
 		const user = await this.userModel.create({
 			email: dto.email,
 			password: hashedPassword,
-			username: dto.username
+			username: dto.username,
+			avatarUrl: dto.avatarUrl
 		})
 
 		await user.save()
@@ -52,7 +53,10 @@ export class AuthService {
 	async checkMe(id: string) {
 		const decodedJwt = this.jwtService.decode(id)
 		// @ts-ignore
-		return this.userModel.findById(decodedJwt._id)
+		const user = this.userModel.findById(decodedJwt._id)
+
+		if (!user) throw  new UnauthorizedException('Пользователь не найден!')
+		return user
 	}
 
 	async validateUser(dto: AuthDto) {

@@ -1,9 +1,11 @@
+import React, { ChangeEvent, useCallback, useState } from 'react'
 import { Layout } from '@/components/layouts/Layout'
 import { Field } from '@/components/UI/field/Field'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { IAuth } from '@/types/auth.interface'
 import { useActions } from '@/hooks/useActions'
 import { useRouter } from 'next/router'
+import { UploadService } from '@/services/upload.service'
 import Link from 'next/link'
 import cl from '@/components/pages/auth/Auth.module.scss'
 
@@ -12,20 +14,25 @@ import cl from '@/components/pages/auth/Auth.module.scss'
 export const Register = () => {
 	const {register: registration} = useActions()
 	const router = useRouter()
+	const [avatarUrl, setAvatarUrl] = useState<string>('')
 
-	const {
-		register,
-		formState: { errors, isValid },
-		handleSubmit,
-		reset
-	} = useForm<IAuth>({ mode: 'onChange' })
+	const { register, formState: { errors, isValid }, handleSubmit, reset } = useForm<IAuth>({ mode: 'onChange' })
 
 	const onSubmit: SubmitHandler<IAuth> = (data) => {
-		registration(data).then(() => {
+		registration({ ...data, avatarUrl }).then(() => {
 			reset()
 			router.push('/')
-		}).catch((e) => console.log('Ошибка регистрации'))
+		}).catch((e: Error) => console.log(e.message))
 	}
+
+	const handleChange = useCallback(async (event: ChangeEvent<HTMLInputElement>) => {
+		const file = event.target.files![0]
+		const formData = new FormData()
+		formData.append('upload', file)
+
+		const {data} = await UploadService.upload(formData)
+		setAvatarUrl(data.url)
+	}, [])
 
 	return (
 		<Layout title="Регистрация">
@@ -73,6 +80,12 @@ export const Register = () => {
 						type={'password'}
 						error={errors.password}
 						title={'Пароль'}
+					/>
+
+					<Field
+						type={'file'}
+						title={'Ваш аватар'}
+						onChange={handleChange}
 					/>
 
 					<button disabled={!isValid} type={'submit'}>

@@ -5,7 +5,7 @@ import { Result } from '@/components/layouts/header/search/result/Result'
 import cl from './Search.module.scss'
 
 export const Search = () => {
-	const {searchValue, setSearchValue, data, isSuccess} = useSearch()
+	const {searchValue, isSuccess, setSearchValue, data} = useSearch()
 
 	return (
 		<div className={cl.wrapper}>

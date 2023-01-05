@@ -2,6 +2,7 @@ export interface IAuth {
 	email: string
 	password: string
 	username: string
+	avatarUrl: string
 }
 
 export interface IUser {
@@ -11,7 +12,6 @@ export interface IUser {
 	password?: string;
 	avatarUrl?: string;
 	accessToken?: string;
-
 }
 
 export interface IAuthState extends IUser{

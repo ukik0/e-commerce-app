@@ -24,7 +24,7 @@ export const ResultItem: FC<ResultItemProps> = ({product}) => {
 
 			<Modal active={open} setActive={setOpen} >
 				<ProductsLeft product={product}/>
-				<ProductsRight product={product}/>
+				<ProductsRight productId={product._id}/>
 			</Modal>
 		</li>
 	)

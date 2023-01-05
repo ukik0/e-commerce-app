@@ -11,18 +11,15 @@ export const Login = () => {
 	const { login } = useActions()
 	const router = useRouter()
 
-	const {
-		register,
-		formState: { errors, isValid },
-		handleSubmit,
-		reset
-	} = useForm<IAuth>({ mode: 'onChange' })
+	const { register, formState: { errors, isValid }, handleSubmit, reset } = useForm<IAuth>({ mode: 'onChange' })
 
 	const onSubmit: SubmitHandler<IAuth> = (data) => {
-		login(data).then(() => {
-			reset()
-			router.push('/')
-		}).catch((e) => console.log('Ошибка авторизации'))
+		login(data)
+			.then(() => {
+				reset()
+				router.push('/')
+			})
+			.catch((e: Error) => console.log('Ошибка авторизации'))
 	}
 
 	return (

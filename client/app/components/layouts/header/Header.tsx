@@ -6,8 +6,7 @@ import Link from 'next/link'
 import cl from './Header.module.scss'
 
 export const Header = () => {
-	const { user, isLoading } = useAuth()
-
+	const { user, isLoading }  = useAuth()
 
 	return (
 		<div className={cl.wrapper}>

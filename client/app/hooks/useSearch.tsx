@@ -1,6 +1,6 @@
 import { useDebounce } from '@/hooks/useDebounce'
-import { api } from '@/store/api/api'
 import { useState } from 'react'
+import { api } from '@/store/api/api'
 
 export const useSearch = () => {
 	const [searchValue, setSearchValue] = useState<string>('')

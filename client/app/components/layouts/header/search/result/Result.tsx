@@ -21,7 +21,6 @@ export const Result: FC<ResultProps> = ({data}) => {
 				)}
 			</ul>
 
-
 		</>
 	)
 }

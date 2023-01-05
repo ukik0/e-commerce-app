@@ -47,7 +47,6 @@ export const authSlice = createSlice({
 			.addCase(getMe.rejected, (state, action) => {
 				state.isLoading = false
 				state.user = null
-				state.accessToken = ''
 			})
 			.addCase(getMe.pending, (state, action) => {
 				state.isLoading = true

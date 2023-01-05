@@ -4,9 +4,9 @@ import { AuthService } from '@/services/auth.service'
 
 export const register = createAsyncThunk<any, IAuth>(
 	'auth/register',
-	async ({ email, password, username }, thunkAPI) => {
+	async ({ email, password, username, avatarUrl }, thunkAPI) => {
 		try {
-			const { data } = await AuthService.register(email, password, username!)
+			const { data } = await AuthService.register(email, password, username, avatarUrl)
 			if (data.accessToken) {
 				localStorage.setItem('token', data.accessToken)
 			}
