@@ -7,6 +7,7 @@ const HomePage: NextPage = (props) => {
 	return <Home {...props} />
 }
 
+
 export async function getStaticProps() {
 	try {
 		const { data: products } = await ProductsService.getProducts()

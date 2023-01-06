@@ -7,4 +7,5 @@ export interface IProduct {
 	type: string[];
 	size: string[];
 	comments: string[];
+	category?: number
 }

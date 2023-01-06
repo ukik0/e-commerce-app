@@ -1,0 +1,15 @@
+.list {
+	@apply flex items-center gap-10 mb-[50px];
+
+	.item {
+		@apply px-5 py-3 text-gray-900 font-bold cursor-pointer transition-all duration-500;
+		background: #F9F9F9;
+		border-radius: 30px;
+		border: 3px solid transparent;
+
+		&.active{
+			background: #ff6c01;
+			color: #fff;
+		}
+	}
+}

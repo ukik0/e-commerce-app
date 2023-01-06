@@ -3,6 +3,6 @@ import { IProduct } from '@/types/product.interface'
 
 export const ProductsService = {
 	async getProducts() {
-		return axiosInstance.get<IProduct[]>('/products')
+		return axiosInstance.get<IProduct[]>('/products?category=0')
 	}
 }
