@@ -23,10 +23,6 @@ export const api = createApi({
 			query: (query) => ({ url: 'products/search', params: { query } }),
 			providesTags: () => [{ type: 'Products' }]
 		}),
-		getProducts: builder.query<IProduct[], number>({
-			query: (category) => ({ url: 'products', params: { category } }),
-			providesTags: () => [{ type: 'Products' }]
-		}),
 		getProduct: builder.query<IComment[], string>({
 			query: (id) => ({ url: `products/${id}` }),
 			transformResponse: (response: IResponse) => response.comments,

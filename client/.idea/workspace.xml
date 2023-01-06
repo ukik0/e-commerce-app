@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52ad78f7-7d25-490b-8ec0-36ed3f7bf73a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/UI/filters/Filters.data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/UI/filters/Filters.interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/UI/filters/Filters.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/UI/filters/Fitlers.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/sort-menu/SortMenu.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/UI/sort-menu/SortMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/store/sort/sort.slice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UI/hero/Hero.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/home/hero/Hero.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UI/hero/Hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/home/hero/Hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UI/products/product-list/ProductList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/product-list/ProductList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/UI/products/Products.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/Products.module.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/pages/home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/home/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hooks/useActions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/hooks/useActions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/store/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/api/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/root-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/root-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/auth/strategies/jwt.strategies.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/auth/strategies/jwt.strategies.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/products/dto/products.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/products/dto/products.dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/products/products.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/products/products.controller.ts" afterDir="false" />
@@ -100,7 +100,7 @@
       <workItem from="1672865522550" duration="1409000" />
       <workItem from="1672917081249" duration="19753000" />
       <workItem from="1672955698982" duration="607000" />
-      <workItem from="1673009686599" duration="9321000" />
+      <workItem from="1673009686599" duration="13117000" />
     </task>
     <servers />
   </component>

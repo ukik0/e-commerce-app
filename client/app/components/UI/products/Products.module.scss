@@ -2,11 +2,14 @@
 	@apply flex items-center gap-10 flex-wrap mb-[120px];
 
 	.wrapper {
-		@apply relative rounded-lg  w-full min-h-[450px] cursor-pointer flex items-center flex-col flex-1;
+		@apply relative rounded-lg w-full cursor-pointer flex items-center flex-col flex-1;
+		flex: 0 1 370px;
 
 		img {
 			@apply h-full w-full object-cover relative;
 			border-radius: 10px 10px 0 0;
+			flex: 0 1 370px;
+			height: 370px;
 		}
 
 		.bottom {
