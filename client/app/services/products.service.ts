@@ -2,7 +2,7 @@ import { axiosInstance } from '@/utils/axios'
 import { IProduct } from '@/types/product.interface'
 
 export const ProductsService = {
-	async getProducts() {
-		return axiosInstance.get<IProduct[]>('/products?category=0')
+	async getProducts(category: number, sortType: string, sortBy: number) {
+		return axiosInstance.get<IProduct[]>(`/products?category=${category}&sortType=${sortType}&sortBy=${sortBy}`)
 	}
 }

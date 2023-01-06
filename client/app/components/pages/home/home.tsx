@@ -2,23 +2,35 @@ import { Layout } from '@/components/layouts/Layout'
 import { Hero } from '@/components/pages/home/hero/Hero'
 import { Heading } from '@/components/UI/heading/Heading'
 import { ProductList } from '@/components/UI/products/product-list/ProductList'
-import { FC, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import { Filters } from '@/components/UI/filters/Filters'
 import { IProduct } from '@/types/product.interface'
 import { SortMenu } from '@/components/UI/sort-menu/SortMenu'
 import { useTypedSelector } from '@/hooks/useTypedSelector'
+import { ProductsService } from '@/services/products.service'
 
 interface IHome {
 	products: IProduct[]
 }
 export const Home: FC<IHome> = ({ products }) => {
 	const [activeItem, setActiveItem] = useState<number>(0)
-	const filteredProducts = activeItem > 0 ? products.filter((product) => product.category === activeItem) : products
-	const {sort} = useTypedSelector((state) => state.sort)
+	const {sort, category} = useTypedSelector((state) => state.sort)
+	const [filteredProducts, setFilteredProducts] = useState([])
 
-	const sortedFilter = filteredProducts.sort((a, b) =>
-		sort === 1 ? a.price - b.price : b.price - a.price
-	)
+
+
+	useEffect(() => {
+		const fetchProducts = async () => {
+			const {data} = await ProductsService.getProducts(activeItem, category, sort)
+			setFilteredProducts(data)
+		}
+		fetchProducts()
+	}, [activeItem, sort, category])
+	// const filteredProducts = activeItem > 0 ? products.filter((product) => product.category === activeItem) : products
+	//
+	// const sortedFilter = [...filteredProducts].sort((a, b) =>
+	// 	sort === 1 ? a[category] - b[category] : b[category] - a[category]
+	// )
 
 	return (
 		<Layout title={'Главная страница'}>
@@ -29,7 +41,7 @@ export const Home: FC<IHome> = ({ products }) => {
 					<Filters activeItem={activeItem} setActiveItem={setActiveItem} />
 					<SortMenu />
 				</div>
-				<ProductList products={sortedFilter!} />
+				<ProductList products={filteredProducts!} />
 			</div>
 		</Layout>
 	)

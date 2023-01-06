@@ -3,6 +3,7 @@ import { IProduct } from '@/types/product.interface'
 import { TypeRootState } from '@/store/store'
 import { IComment, ICommentCreate, ICommentResponse, IResponse } from '@/types/comments.interface'
 
+// @ts-ignore
 export const api = createApi({
 	reducerPath: 'api',
 	tagTypes: ['Products', 'Comments'],
@@ -21,6 +22,11 @@ export const api = createApi({
 	endpoints: (builder) => ({
 		getProductsByQuery: builder.query<IProduct[], string>({
 			query: (query) => ({ url: 'products/search', params: { query } }),
+			providesTags: () => [{ type: 'Products' }]
+		}),
+		getProducts: builder.query<IProduct[], any>({
+			// @ts-ignore
+			query: (category: number, sortType: string) => ({ url: `products?category=${category}&sortType=${sortType}`}),
 			providesTags: () => [{ type: 'Products' }]
 		}),
 		getProduct: builder.query<IComment[], string>({
