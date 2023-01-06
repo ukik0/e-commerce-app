@@ -8,13 +8,17 @@ export class ProductsController {
 
 	@Get()
 	@UsePipes(new ValidationPipe())
-	getAll() {
-		return this.productsService.getAll()
+	getAll(
+		@Query('category') category: number,
+		@Query('sortType') sortType: string,
+		@Query('sortBy') sortBy: number
+	) {
+		return this.productsService.getAll(category, sortType, sortBy)
 	}
 
 	@Get('search')
 	@UsePipes(new ValidationPipe())
-	search(@Query('query') query:string) {
+	search(@Query('query') query: string) {
 		return this.productsService.search(query)
 	}
 
@@ -32,7 +36,7 @@ export class ProductsController {
 
 	@Put('/:id')
 	@UsePipes(new ValidationPipe())
-	update(@Body() dto: ProductsDto, @Param('id') id: String, ) {
+	update(@Body() dto: ProductsDto, @Param('id') id: String) {
 		return this.productsService.update(id, dto)
 	}
 

@@ -17,5 +17,4 @@ export class UsersDto {
 	@IsString()
 	avatarUrl: string
 
-
 }

@@ -25,4 +25,6 @@ export class ProductsDto {
 	@IsArray()
 	size: string[]
 
+	@IsNumber()
+	category: number
 }

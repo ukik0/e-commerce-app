@@ -3,7 +3,6 @@ import { InjectModel } from '@nestjs/mongoose'
 import { User, UserDocument } from './schemas/users.schema'
 import { Model } from 'mongoose'
 
-//TODO: протестировать после создания пользователя
 @Injectable()
 export class UsersService {
 	constructor(

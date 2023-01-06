@@ -16,4 +16,5 @@ export class UsersController {
 	getOne(@Param('id') id: String) {
 		return this.usersService.getOne(id)
 	}
+
 }

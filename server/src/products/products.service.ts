@@ -12,8 +12,8 @@ export class ProductsService {
 		@InjectModel(Comment.name) private commentModel: Model<CommentDocument>
 	) {}
 
-	async getAll(): Promise<Product[]> {
-		const products = await this.productModel.find()
+	async getAll(category: number = 0, sortType: string = 'price', sortBy: number = 1): Promise<Product[]> {
+		const products = await this.productModel.find(Number(category) === 0 ? {  } : {category}).sort({ [sortType]: Number(sortBy) === 1 ? 1 : -1 })
 		return products
 	}
 
