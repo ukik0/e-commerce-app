@@ -21,7 +21,7 @@ export const Login = () => {
 				router.push('/')
 				toastr.success('Авторизация', 'прошла успешно')
 			})
-			.catch((e: Error) => toastr.error('Ошибка.', 'Возможно, пользователь уже зарегистрирован'))
+			.catch((e: Error) => toastr.error('Ошибка.', 'Возможно, пользователя не существует'))
 	}
 
 	return (

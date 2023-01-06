@@ -17,7 +17,6 @@ export default function App({ Component, pageProps }: AppProps) {
 						newestOnTop={false}
 						preventDuplicates
 						progressBar
-						closeOnToastrClick
 						timeOut={4000}
 						transitionIn={'fadeIn'}
 						transitionOut={'fadeOut'}

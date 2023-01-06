@@ -1,0 +1,21 @@
+.empty {
+  @apply h-[51.1vh] text-center flex items-center flex-col gap-10 mt-[230px];
+
+  &__title {
+    @apply font-bold text-[30px];
+  }
+
+  &__description {
+    @apply font-medium text-[22px] max-w-[600px] text-gray-800;
+  }
+
+  &__btn {
+    @apply px-4 py-3 text-white font-medium transition-all duration-300;
+    background: #ff6c01;
+    border-radius: 12px;
+
+    &:hover{
+      opacity: .75;
+    }
+  }
+}

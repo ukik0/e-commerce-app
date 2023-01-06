@@ -2,18 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52ad78f7-7d25-490b-8ec0-36ed3f7bf73a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/store/middlewares/error.middleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/utils/api.utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/pages/cart/cart-bottom/CartBottom.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/pages/cart/cart-bottom/CartBottom.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/pages/cart/cart-item/CartItem.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/pages/cart/empty-cart/EmptyCart.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/pages/cart/empty-cart/EmptyCart.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsLeft.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsLeft.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/UI/products/products-right/ProductsRight.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/products-right/ProductsRight.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/pages/auth/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/auth/Login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/auth/Register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/auth/Register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/root-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/root-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/pages/cart/Cart.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/cart/Cart.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/pages/cart/Cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/cart/Cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/pages/cart/cart-item/CartItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/cart/cart-item/CartItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/cart/cart.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/cart/cart.slice.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/styles/globals.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/styles/globals.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/products/schemas/products.schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/products/schemas/products.schema.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/users/dto/users.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/users/dto/users.dto.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/users/schemas/users.schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/users/schemas/users.schema.ts" afterDir="false" />
@@ -48,7 +51,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/MyProjects/NextJS/e-commerce-app/client/app/utils",
+    "last_opened_file_path": "D:/MyProjects/FullStack",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -95,7 +98,9 @@
       <workItem from="1672778966661" duration="5000" />
       <workItem from="1672829793114" duration="30768000" />
       <workItem from="1672865522550" duration="1409000" />
-      <workItem from="1672917081249" duration="16200000" />
+      <workItem from="1672917081249" duration="19753000" />
+      <workItem from="1672955698982" duration="607000" />
+      <workItem from="1673009686599" duration="2748000" />
     </task>
     <servers />
   </component>

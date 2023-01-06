@@ -5,17 +5,22 @@ import { api } from '@/store/api/api'
 import relativeTime from 'dayjs/plugin/relativeTime'
 import dayjs from 'dayjs'
 import cl from './ProductsRight.module.scss'
+import { useAuth } from '@/hooks/useAuth'
+import { toastr } from 'react-redux-toastr'
 
 dayjs.extend(relativeTime)
 
 export const ProductsRight: FC<{ productId: string }> = ({ productId }) => {
 	const [value, setValue] = useState<string>('')
+	const {user} = useAuth()
 
 	const {data: comments} = api.useGetProductQuery(productId)
 	const [comment, {isLoading: isCommentsLoading}] = api.useCreateCommentMutation()
 
 	const handleComment = () => {
-		comment({productId, text: value, created_at: Date.now()}).unwrap().then(() => setValue(''))
+		comment({productId, text: value, created_at: Date.now()}).unwrap()
+			.then(() => setValue(''))
+			.catch((e) => toastr.error('Комментарий', 'необходимо авторизоваться'))
 	}
 
 	return (

@@ -2,7 +2,7 @@ import { FC, MouseEvent, useCallback } from 'react'
 import { IoIosClose } from 'react-icons/io'
 import { IProduct } from '@/types/product.interface'
 import { useActions } from '@/hooks/useActions'
-import cl from '@/components/pages/cart/Cart.module.scss'
+import cl from './CartItem.module.scss'
 
 interface CartItemProps {
 	product: IProduct
@@ -17,7 +17,7 @@ export const CartItem: FC<CartItemProps> = ({product}) => {
 
 	return (
 		<li className={cl.item}>
-			<img src='https://www.seekpng.com/png/full/797-7979747_80s-pikachu-acrylic-pixel-art-painting.png' alt='img' />
+			<img src={`http://localhost:8001${product.image}`} alt={product.title} />
 			<div className={cl.info}>
 				<h6 className={cl.title}>{product.title}</h6>
 				<p className={cl.type}>{product.type}, {product.size}.</p>
