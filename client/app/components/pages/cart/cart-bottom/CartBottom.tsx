@@ -11,11 +11,11 @@ export const CartBottom: FC<CartBottomProps> = ({products}) => {
 		<div className={cl.container}>
 			<div className={cl.bottom}>
 				<div className={cl.all}>
-					Всего товаров: <span>{products.length} шт.</span>
+					Всего товаров: <span>{products.reduce((acc, el) => acc + el.count, 0)} шт.</span>
 				</div>
 
 				<div className={cl.summary}>
-					Сумма заказа <span>{products.reduce((acc, el) => acc + el.price, 0)} ₽</span>
+					Сумма заказа <span>{products.reduce((acc, el) => acc + (el.price * el.count), 0)} ₽</span>
 				</div>
 			</div>
 

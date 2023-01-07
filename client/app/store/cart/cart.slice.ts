@@ -20,6 +20,14 @@ export const cartSlice = createSlice({
 		removeFromCart: (state, action: PayloadAction<IProduct>) => {
 			state.products = state.products.filter((product) => product.size[0] !== action.payload.size[0])
 		},
+		incrementCount: (state, action) => {
+			const product = state.products.find((item) => item._id === action.payload._id)
+			product!.count++
+		},
+		decrementCount: (state, action) => {
+			const product = state.products.find((item) => item._id === action.payload._id)
+			product!.count--
+		},
 		clearCart: (state) => {
 			state.products = []
 		}

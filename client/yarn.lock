@@ -157,7 +157,7 @@
   resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.1.0.tgz#0a1dee4bbce87ff71602625d33f711cafd8afc08"
   integrity sha512-zbsLwtnHo84w1Kc8rScAo5GMk1GdecSlrflIbfnEBJwvTSj1SL6kkOYV+nHraMCPEy+RNZZUaZyL8JosDGCtGQ==
 
-"@floating-ui/dom@^1.0.1":
+"@floating-ui/dom@^1.0.1", "@floating-ui/dom@^1.0.4":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.1.0.tgz#29fea1344fdef15b6ba270a733d20b7134fee5c2"
   integrity sha512-TSogMPVxbRe77QCj1dt8NmRiJasPvuc+eT5jnJ6YpLqgOD2zXc5UA3S1qwybN+GVCDNdKfpKy1oj8RpzLJvh6A==
@@ -1097,6 +1097,14 @@ react-select@^5.7.0:
     prop-types "^15.6.0"
     react-transition-group "^4.3.0"
     use-isomorphic-layout-effect "^1.1.2"
+
+react-tooltip@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-5.4.0.tgz#522fa9408812ec52c67e67222832519dfa089c12"
+  integrity sha512-bfUZUQ1im0TrO49yhG4qtYsx4WTPzF4TSELAgQfcOYuUfO7Ho09SdIU9LxzbBwhH55ZWgYhOpeCp9VKH6Cokdw==
+  dependencies:
+    "@floating-ui/dom" "^1.0.4"
+    classnames "^2.3.2"
 
 react-transition-group@^4.3.0:
   version "4.4.5"

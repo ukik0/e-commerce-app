@@ -1,28 +1,27 @@
 import { Home } from '@/components/pages/home/home'
 import { NextPage } from 'next'
-import { ProductsService } from '@/services/products.service'
 
-const HomePage: NextPage = (props) => {
+const HomePage: NextPage = () => {
 
-	return <Home {...props} />
+	return <Home />
 }
 
 
-export async function getStaticProps() {
-	try {
-		const { data: products } = await ProductsService.getProducts()
-		return {
-			props: {
-				products
-			}
-		}
-	} catch (e) {
-		return {
-			props: {
-				products: []
-			}
-		}
-	}
-}
+// export async function getStaticProps() {
+// 	try {
+// 		const { data: products } = await ProductsService.getProducts()
+// 		return {
+// 			props: {
+// 				products
+// 			}
+// 		}
+// 	} catch (e) {
+// 		return {
+// 			props: {
+// 				products: []
+// 			}
+// 		}
+// 	}
+// }
 
 export default HomePage

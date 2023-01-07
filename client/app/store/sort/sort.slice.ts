@@ -1,8 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const initialState: {sort: number, category: string} = {
-	sort: 1,
-	category: 'price'
+const initialState: {sortBy: number, sortType: string} = {
+	sortBy: 1,
+	sortType: 'price'
 }
 
 export const sortSlice = createSlice({
@@ -10,10 +10,10 @@ export const sortSlice = createSlice({
 	initialState: initialState,
 	reducers: {
 		setSort: (state, action) => {
-			state.sort = action.payload
+			state.sortBy = action.payload
 		},
 		setCategory: (state, action) => {
-			state.category = action.payload
+			state.sortType = action.payload
 		}
 	},
 })

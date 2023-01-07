@@ -1,17 +1,60 @@
 .left {
-	@apply flex items-center flex-col w-1/2;
+	@apply flex items-center flex-col w-1/2 relative;
 
 	.btn {
-		@apply text-white bg-[#ff6c01] rounded-[8px] py-3 px-4 font-medium opacity-75 hover:opacity-100 transition-all duration-300 w-full;
+		@apply text-white relative bg-[#ff6c01] rounded-[8px] py-3 px-4 font-medium opacity-75 hover:opacity-100 transition-all duration-300 w-full;
+
+		&.empty{
+			cursor: not-allowed;
+			&::before{
+				content: '';
+				position: absolute;
+				inset: 0;
+				background: rgba(#000, .3);
+			}
+		}
 	}
 
-	img {
-		max-width: 100% !important;
-		width: 100% !important;
-		max-height: 400px !important;
-		height: 100% !important;
-		object-fit: cover;
+	.wrapper{
+		@apply w-full relative;
+
+		&:hover{
+			.tooltip{
+				opacity: 1;
+			}
+		}
+
+		.tooltip {
+			max-width: 300px !important;
+			background-color: #fff !important;
+			box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
+			border-radius: 5px !important;
+			padding: 1rem !important;
+			color: gray !important;
+			text-align: center !important;
+			line-height: 1.5 !important;
+			opacity: 1 !important;
+			position: absolute;
+			opacity: 0;
+			z-index: 100;
+			transition: .3s all ease-in-out;
+			top: 0;
+			width: 100%;
+			left: 10%;
+		}
+
+		img {
+			max-width: 100% !important;
+			width: 100% !important;
+			max-height: 400px !important;
+			height: 100% !important;
+			object-fit: cover;
+		}
 	}
+
+
+
+
 
 	.size {
 		@apply flex items-center mb-3 mt-3 py-2 px-4 w-full text-center;

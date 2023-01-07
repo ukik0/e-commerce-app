@@ -25,8 +25,7 @@ export const api = createApi({
 			providesTags: () => [{ type: 'Products' }]
 		}),
 		getProducts: builder.query<IProduct[], any>({
-			// @ts-ignore
-			query: (category: number, sortType: string) => ({ url: `products?category=${category}&sortType=${sortType}`}),
+			query: ({ category, sortType, sortBy }) => ({ url: `products?category=${category}&sortType=${sortType}&sortBy=${sortBy}`}),
 			providesTags: () => [{ type: 'Products' }]
 		}),
 		getProduct: builder.query<IComment[], string>({

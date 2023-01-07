@@ -4,17 +4,17 @@ import cn from 'classnames'
 import cl from './Fitlers.module.scss'
 
 interface FilterProps {
-	activeItem: number
-	setActiveItem: Dispatch<SetStateAction<number>>
+	category: number
+	setCategory: Dispatch<SetStateAction<number>>
 }
 
-export const Filters: FC<FilterProps> = ({activeItem,setActiveItem}) => {
+export const Filters: FC<FilterProps> = ({category,setCategory}) => {
 
 	return (
 		<ul className={cl.list}>
 			{FiltersData.map((item, idx) => (
-				<li onClick={() => setActiveItem(idx)} className={cn(cl.item, {
-					[cl.active]: activeItem === idx
+				<li onClick={() => setCategory(idx)} className={cn(cl.item, {
+					[cl.active]: category === idx
 				})} key={item.title}>
 					<span className={cl.title}>{item.title}</span>
 				</li>

@@ -23,6 +23,25 @@
 		@apply text-gray-700 font-medium text-[22px];
 	}
 
+	.buttons {
+		@apply flex items-center gap-3;
+
+		.btn {
+			@apply p-1 text-gray-900 font-medium rounded-full flex items-center justify-center;
+			border: 1px solid #ff6c01;
+			width: 25px;
+			height: 25px;
+			
+			&.block{
+				cursor: not-allowed;
+			}
+		}
+
+		span {
+			@apply text-gray-900 font-bold;
+		}
+	}
+
 	.icon {
 		@apply max-w-[40px] w-full h-[40px] cursor-pointer transition-colors duration-300;
 		&:hover {

@@ -8,4 +8,5 @@ export interface IProduct {
 	size: string[];
 	comments: string[];
 	category?: number
+	count: number
 }
