@@ -2,20 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52ad78f7-7d25-490b-8ec0-36ed3f7bf73a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/components/pages/create/Create.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/pages/create/Create.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/create.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UI/filters/Filters.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/filters/Filters.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsLeft.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsLeft.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsLeft.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/UI/products/products-left/ProductsLeft.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/cart/cart-item/CartItem.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/cart/cart-item/CartItem.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/cart/cart-item/CartItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/cart/cart-item/CartItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/components/pages/home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/home/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/products.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/products.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/services/upload.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/upload.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/store/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/api/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/cart/cart.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/cart/cart.slice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/sort/sort.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/sort/sort.slice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/types/product.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/types/product.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../server/src/products/products.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/products/products.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +40,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/MyProjects/FullStack/portfolio",
+    "last_opened_file_path": "D:/MyProjects/NextJS/e-commerce-app/client",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -95,7 +91,8 @@
       <workItem from="1672955698982" duration="607000" />
       <workItem from="1673009686599" duration="16915000" />
       <workItem from="1673035903524" duration="3543000" />
-      <workItem from="1673098464475" duration="2767000" />
+      <workItem from="1673098464475" duration="3648000" />
+      <workItem from="1673180209462" duration="4846000" />
     </task>
     <servers />
   </component>

@@ -3,7 +3,6 @@ import { IProduct } from '@/types/product.interface'
 import { TypeRootState } from '@/store/store'
 import { IComment, ICommentCreate, ICommentResponse, IResponse } from '@/types/comments.interface'
 
-// @ts-ignore
 export const api = createApi({
 	reducerPath: 'api',
 	tagTypes: ['Products', 'Comments'],

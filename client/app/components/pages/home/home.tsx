@@ -14,6 +14,8 @@ export const Home = () => {
 	const {sortBy, sortType} = useTypedSelector((state) => state.sort)
 	const {data: filteredProducts, isLoading, isError} = api.useGetProductsQuery({ category, sortType, sortBy })
 
+	if (isError) return <h1>Error</h1>
+
 
 	return (
 		<Layout title={'Главная страница'}>
@@ -24,7 +26,7 @@ export const Home = () => {
 					<Filters category={category} setCategory={setCategory} />
 					<SortMenu />
 				</div>
-				<ProductList products={filteredProducts!} />
+				{isLoading ? <h1>Loading...</h1> : <ProductList products={filteredProducts!} />}
 			</div>
 		</Layout>
 	)
