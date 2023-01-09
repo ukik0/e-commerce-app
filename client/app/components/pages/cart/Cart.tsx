@@ -28,7 +28,7 @@ export const Cart = () => {
 						</button>
 						<ul className={cl.list}>
 							{products.map((product) => (
-								<CartItem product={product} key={product.size} />
+								<CartItem product={product} key={product._id} />
 							))}
 						</ul>
 

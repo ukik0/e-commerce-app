@@ -18,7 +18,7 @@ export const cartSlice = createSlice({
 			localStorage.setItem('products', JSON.stringify(state.products))
 		},
 		removeFromCart: (state, action: PayloadAction<IProduct>) => {
-			state.products = state.products.filter((product) => product.size[0] !== action.payload.size[0])
+			state.products = state.products.filter((product) => product._id !== action.payload._id)
 		},
 		incrementCount: (state, action) => {
 			const product = state.products.find((item) => item._id === action.payload._id)

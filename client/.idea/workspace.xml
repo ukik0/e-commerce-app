@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52ad78f7-7d25-490b-8ec0-36ed3f7bf73a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/pages/create/Create.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/pages/create/Create.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/create.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/providers/AuthProvider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/providers/CheckRole.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/providers/route.interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/pages/home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/home/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/products.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/products.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/upload.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/upload.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/api/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/api/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/store/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/pages/cart/Cart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/pages/cart/Cart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/store/cart/cart.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/store/cart/cart.slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/create.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/create.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../server/src/products/products.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../server/src/products/products.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +39,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/MyProjects/NextJS/e-commerce-app/client",
+    "last_opened_file_path": "D:/MyProjects/NextJS",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -92,7 +91,8 @@
       <workItem from="1673009686599" duration="16915000" />
       <workItem from="1673035903524" duration="3543000" />
       <workItem from="1673098464475" duration="3648000" />
-      <workItem from="1673180209462" duration="4846000" />
+      <workItem from="1673180209462" duration="5437000" />
+      <workItem from="1673275504955" duration="1429000" />
     </task>
     <servers />
   </component>

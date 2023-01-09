@@ -5,6 +5,7 @@ import { persistor, store } from '@/store/store'
 import NextNProgress from 'nextjs-progressbar'
 import ReduxToastr from 'react-redux-toastr'
 import '../app/styles/globals.scss'
+import { AuthProvider } from '@/providers/AuthProvider'
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
@@ -12,15 +13,17 @@ export default function App({ Component, pageProps }: AppProps) {
 			<NextNProgress color="#FF7652" startPosition={0.3} stopDelayMs={200} height={3} showOnShallow={true} />
 			<Provider store={store}>
 				<PersistGate persistor={persistor} loading={null}>
-					<Component {...pageProps} />
-					<ReduxToastr
-						newestOnTop={false}
-						preventDuplicates
-						progressBar
-						timeOut={4000}
-						transitionIn={'fadeIn'}
-						transitionOut={'fadeOut'}
-					/>
+					<AuthProvider Component={Component}>
+						<Component {...pageProps} />
+						<ReduxToastr
+							newestOnTop={false}
+							preventDuplicates
+							progressBar
+							timeOut={4000}
+							transitionIn={'fadeIn'}
+							transitionOut={'fadeOut'}
+						/>
+					</AuthProvider>
 				</PersistGate>
 			</Provider>
 		</>
